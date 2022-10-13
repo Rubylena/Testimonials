@@ -11,6 +11,8 @@ body {
   flex-direction: column;
   place-content: center;
   place-items: center;
+  height: 100vh;
+  padding: 35em 15em;
   background: #ecf2f8; }
   @media screen and (max-width: 575px) {
     body {
@@ -22,8 +24,8 @@ body {
       height: 100%; } }
   @media screen and (min-width: 796px) {
     body {
-      padding: 20em 15em;
-      height: 100vh; } }
+      padding: 15em;
+      height: 100%; } }
 
 main {
   display: grid;

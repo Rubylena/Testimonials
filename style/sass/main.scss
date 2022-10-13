@@ -42,6 +42,8 @@ body{
     flex-direction: column;
     place-content: center;
     place-items: center;
+    height: 100vh;
+    padding: 35em 15em;
     background: $Light-grayish-blue;
 
     @include screen-size(phone-only){
@@ -53,8 +55,8 @@ body{
         height: 100%;
     }
     @include screen-size(desktop-only){
-        padding: 20em 15em;
-        height: 100vh;
+        padding: 15em;
+        height: 100%;
     }
 }
 
