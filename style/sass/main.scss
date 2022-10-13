@@ -54,7 +54,7 @@ body{
     }
     @include screen-size(desktop-only){
         padding: 20em 15em;
-        height: 100%;
+        height: 100vh;
     }
 }
 
