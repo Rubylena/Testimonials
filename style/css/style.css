@@ -5,14 +5,18 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 13px;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  padding: 7em 15em;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20em;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125em;
   background: #ecf2f8; }
   @media screen and (max-width: 575px) {
     body {
-      padding: 10em 5em;
+      padding: 5em;
       height: 100%; } }
   @media screen and (min-width: 575px) and (max-width: 796px) {
     body {
@@ -20,15 +24,13 @@ body {
       height: 100%; } }
   @media screen and (min-width: 796px) and (max-width: 1440px) {
     body {
-      padding: 15em;
-      height: 100%; } }
+      padding: 15em; } }
 
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0.5em;
-  gap: 3em;
-  height: 50%; }
+  gap: 3em; }
   @media screen and (max-width: 575px) {
     main {
       grid-template-columns: 1fr; } }
@@ -98,16 +100,16 @@ main {
     align-items: center;
     gap: 2em; }
     .box_heading div h1 {
-      font-size: 20px; }
+      font-size: 1.25em; }
     .box_heading div h2 {
-      font-size: 20px; }
+      font-size: 1.25em; }
     .box_heading p {
       opacity: 0.5; }
   .box > p:nth-child(2) {
-    font-size: 26px; }
+    font-size: 1.625em; }
   .box p:nth-child(3) {
     opacity: 0.7;
-    font-size: 16px; }
+    font-size: 1em; }
   .box_img, .box_img1, .box_img2 {
     border-radius: 100%;
     display: flex; }
