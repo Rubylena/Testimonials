@@ -18,11 +18,11 @@ $White: hsl(0, 0%, 100%);
 }
 
 @mixin screen-size($size){
-    @if $size == tablet-only {
+    @if $size == phone-only {
         @media screen and (max-width: 575px){@content;}
     }
-    @else if $size == desktop-only {
-        @media screen and (min-width: 1440px){@content;}
+    @else if $size == tablet-only {
+        @media screen and (min-width: 575px) and (max-width: 796px){@content;}
     }
 }
 
@@ -41,9 +41,14 @@ body{
     place-content: center;
     place-items: center;
     background: $Light-grayish-blue;
-    padding: 0 15em;
-    @include screen-size(tablet-only){
+    padding: 10em 15em;
+    @include screen-size(phone-only){
         padding: 10em 5em;
+        height: 100%;
+    }
+    @include screen-size(tablet-only){
+        padding: 10em;
+        height: 100%;
     }
 }
 
@@ -52,7 +57,7 @@ main{
     grid-template-columns: repeat(4, 1fr);
     padding: 0.5em;
     gap: 3em;
-    @include screen-size(tablet-only){
+    @include screen-size(phone-only){
         grid-template-columns: 1fr;
     }
 }
@@ -65,14 +70,14 @@ main{
     color: $Very-dark-blackish-blue;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    @include screen-size(tablet-only){
+    @include screen-size(phone-only){
         padding: 1.5em;
     }
     &_1{
         background: url('/images/bg-pattern-quotation.svg') $Moderate-violet 85% 0 no-repeat;
         color: $White;
         grid-column: 1 / span 2;
-        @include screen-size(tablet-only){
+        @include screen-size(phone-only){
             grid-column: 1 / span 1;
             grid-row: 1;
         }
@@ -80,15 +85,21 @@ main{
     &_2{
         background: $Very-dark-grayish-blue;
         color: $White;
-        @include screen-size(tablet-only){
+        @include screen-size(phone-only){
             grid-row: 2;
+        }
+        @include screen-size(tablet-only){
+            grid-colum: 3 / span 2;
         }
     }
     &_3{
         background: $White;
         grid-row: 2;
-        @include screen-size(tablet-only){
+        @include screen-size(phone-only){
             grid-row: 3;
+        }
+        @include screen-size(tablet-only){
+            grid-colum: 1 / span 2;
         }
     }
     &_4{
@@ -96,17 +107,24 @@ main{
         color: $White;
         grid-row: 2;
         grid-column: 2 / span 2;
-        @include screen-size(tablet-only){
+        @include screen-size(phone-only){
             grid-column: 1 / span 1;
             grid-row: 4;
+        }
+        @include screen-size(tablet-only){
+            grid-colum: 3 / span 2;
         }
     }
     &_5{
         background: $White;
         grid-row: 1 / span 2;
-        @include screen-size(tablet-only){
+        @include screen-size(phone-only){
             grid-column: 1 / span 1;
             grid-row: 5;
+        }
+        @include screen-size(tablet-only){
+            grid-column: 1 / span 3;
+            grid-row: 3;
         }
     }
     &_heading{
