@@ -22,7 +22,7 @@ body {
       height: 100%; } }
   @media screen and (min-width: 796px) and (max-width: 1440px) {
     body {
-      padding: 15em;
+      padding: 20em 15em;
       height: 100%; } }
 
 main {
