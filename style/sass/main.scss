@@ -25,7 +25,7 @@ $White: hsl(0, 0%, 100%);
         @media screen and (min-width: 575px) and (max-width: 796px){@content;}
     }
     @else if $size == desktop-only {
-        @media screen and (min-width: 796px){@content;}
+        @media screen and (min-width: 796px) and (max-width: 1440px){@content;}
     }
 }
 
@@ -38,14 +38,14 @@ $White: hsl(0, 0%, 100%);
 body{
     font-family: $font-stack;
     font-size: $text-size;
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    place-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // place-content: center;
+    // place-items: center;
     height: 100vh;
-    padding: 35em 15em;
-    background: $Light-grayish-blue;
+    padding: 7em 15em;
 
+    background: $Light-grayish-blue;
     @include screen-size(phone-only){
         padding: 10em 5em;
         height: 100%;
@@ -65,6 +65,8 @@ main{
     grid-template-columns: repeat(4, 1fr);
     padding: 0.5em;
     gap: 3em;
+    height: 50%;
+
     @include screen-size(phone-only){
         grid-template-columns: 1fr;
     }
