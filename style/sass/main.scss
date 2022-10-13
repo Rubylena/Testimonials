@@ -34,11 +34,11 @@ $White: hsl(0, 0%, 100%);
 
 body{
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 10em;
+    padding: 0 10em;
     font-family: $font-stack;
     font-size: $text-size;
     background: $Light-grayish-blue;
@@ -55,8 +55,7 @@ body{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 0.5em;
-    gap: 3em;
+    gap: 1.5em;
     @include screen-size(phone-only){
         grid-template-columns: 1fr;
     }
@@ -65,8 +64,8 @@ main{
 .box{
     display: flex;
     flex-direction: column;
-    gap: 0.8em;
-    padding: 1.5em 2.5em;
+    gap: 0.5em;
+    padding: 1em 2em;
     color: $Very-dark-blackish-blue;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -119,7 +118,7 @@ main{
         background: $White;
         grid-row: 1 / span 2;
         p:nth-child(3){
-            font-size: 1.1em !important;
+            font-size: 0.9em !important;
         }
         @include screen-size(phone-only){
             grid-column: 1 / span 1;
@@ -150,8 +149,8 @@ main{
     }
     & p:nth-child(3){
         opacity: $half-quarter-opacity;
-        font-size: 1em;
-        line-height: 1.5em;
+        font-size: $text-size;
+        line-height: 1.2em;
     }
 
     &_img{
