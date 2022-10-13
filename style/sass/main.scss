@@ -24,6 +24,9 @@ $White: hsl(0, 0%, 100%);
     @else if $size == tablet-only {
         @media screen and (min-width: 575px) and (max-width: 796px){@content;}
     }
+    @else if $size == desktop-only {
+        @media screen and (min-width: 796px) and (max-width: 1200px){@content;}
+    }
 }
 
 *{
@@ -41,13 +44,18 @@ body{
     place-content: center;
     place-items: center;
     background: $Light-grayish-blue;
-    padding: 10em 15em;
+    padding: 0 15em;
+
     @include screen-size(phone-only){
         padding: 10em 5em;
         height: 100%;
     }
     @include screen-size(tablet-only){
         padding: 10em;
+        height: 100%;
+    }
+    @include screen-size(desktop-only){
+        padding: 12em;
         height: 100%;
     }
 }
