@@ -43,7 +43,7 @@ body{
     place-content: center;
     place-items: center;
     background: $Light-grayish-blue;
-    padding: 5em 15em;
+    // padding: 5em 15em;
 
     @include screen-size(phone-only){
         padding: 10em 5em;
@@ -54,9 +54,8 @@ body{
         height: 100%;
     }
     @include screen-size(desktop-only){
-        padding: 15em;
+        padding: 20em 15em;
         height: 100%;
-
     }
 }
 
