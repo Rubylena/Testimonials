@@ -7,13 +7,13 @@
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   place-content: center;
   place-items: center;
   background: #ecf2f8;
-  padding: 0 15em; }
+  height: 100vh;
+  padding: 5em 15em; }
   @media screen and (max-width: 575px) {
     body {
       padding: 10em 5em;
@@ -22,9 +22,9 @@ body {
     body {
       padding: 10em;
       height: 100%; } }
-  @media screen and (min-width: 796px) and (max-width: 1200px) {
+  @media screen and (min-width: 796px) and (max-width: 1440px) {
     body {
-      padding: 12em;
+      padding: 15em;
       height: 100%; } }
 
 main {
